@@ -1,0 +1,76 @@
+No | English		| Vietnamese
+|abandon		|bỏ, từ bỏ
+|abandoned		|bị bỏ rơi, bị ruồng bỏ
+|ability		|khả năng, năng lực
+|able		|có năng lực, có tài
+|about		|khoảng, về
+|above		|ở trên, lên trên
+|abroad		|ở, ra nước ngoài, ngoài trời
+|absence		|sự vắng mặt
+|absent		|vắng mặt, nghỉ
+|absolute		|tuyệt đối, hoàn toàn
+|absolutely		|tuyệt đối, hoàn toàn
+|absorb		|thu hút, hấp thu, lôi cuốn
+|abuse		|lộng hành, lạm dụng
+|academic		|thuộc học viện, ĐH, viện hàn lâm
+|accent		|trọng âm, dấu trọng âm
+|acceptable		|có thể chấp nhận, chấp thuận
+|access		|lối, cửa, đường vào
+|accident		|ngu
+|accidental		|tình cờ, bất ngờ
+|accidentally		|tình cờ, ngẫu nhiên
+|accommodation		|sự thích nghi, điều tiết
+|accompany		|đi theo, đi cùng, kèm theo
+|according		|theo, y theo
+|acept		|chấp nhận, chấp thuận
+|committee		|ủy ban
+|common		|công, công cộng, thông thường, phổ biến
+|commonly		|thông thường, bình thường
+|communicate		|truyền, truyền đạt; giao thiệp, liên lạc
+|communication		|sự giao tiếp, liên lạc, sự truyền đạt, truyền tin
+|community		|dân chúng, nhân dân
+|company		|công ty
+|disk		|đĩa, đĩa hát
+|dislike		|sự không ưa, không thích, sự ghét
+|dismiss		|giải tán (quân đội, đám đông); sa thải (người làm)
+|display		|bày tỏ, phô trương, trưng bày; sự bày ra, phô bày, trưng bày
+|dissolve		|tan rã, phân hủy, giải tán
+|elegant		|thanh lịch, tao nhã
+|element		|yếu tôd, nguyên tố
+|elevator		|máy nâng, thang máy
+|elsewhere		|ở một nơi nào khác
+|few		|một ít, một vài
+|film		|phim, được dựng thành phim
+|final		|cuối cùng, cuộc đấu chung kết
+|finance		|tài chính; tài trợ, cấp vốn
+|financial		|thuộc (tài chính)
+|fine		|on
+|gram		|đậu xanh
+|grammar		|văn phạm
+|grand		|rộng lớn, vĩ đại
+|grandchild		|cháu (của ông bà)
+|granddaughter		|cháu gái
+|grandfather		|ông
+|grandmother		|bà
+|grandparent		|ông bà
+|grey		|màu xám
+|groceries		|hàng tạp hóa
+|grocery		|cửa hàng tạp phẩm
+|ground		|mặt đất, đất, bãi đất
+|group		|nhóm
+|grow		|mọc, mọc lên
+|growth		|sự lớn lên, sự phát triển
+|injure		|làm tổn thương, làm hại, xúc phạm
+|injured		|bị tổn thương, bị xúc phạm
+|injury		|sự làm tổn thương, làm hại; điều hại, điều tổn hại
+|ink		|mực
+|inner		|ở trong, nội bộ; thân cận
+|innocent		|vô tội, trong trắng, ngây thơ
+|let		|cho phép, để cho
+|letter		|thư; chữ cái, mẫu tự
+|level		|trình độ, cấp, vị trí; bằng, ngang bằng
+|library		|thư viện
+|licence		|bằng, chứng chỉ, bằng cử nhân; sự cho phép
+|license		|cấp chứng chỉ, cấp bằng, cho phép
+|lid		|nắp, vung (xoong, nồi..); mi mắt (eyelid)
+|little		|nhỏ, một ít
