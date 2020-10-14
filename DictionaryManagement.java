@@ -1,4 +1,5 @@
 import java.io.*;
+import java.sql.*;
 import java.util.Scanner;
 
 public class DictionaryManagement {
@@ -26,6 +27,31 @@ public class DictionaryManagement {
         }
     }
 
+    public static void insertFromDatabase(Dictionary dic) {
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection("jdbc:sqlite:src/data.db");
+            Statement statement = connection.createStatement();
+
+            ResultSet rs = statement.executeQuery("select * from av");
+            while(rs.next()) {
+                dic.setLink(new Word(rs.getString("word"), rs.getString("description"),
+                        rs.getString("type"), rs.getString("pronounce")));
+
+                dic.insert(rs.getString("word"));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } finally {
+            try {
+                if (connection != null)
+                connection.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+
     public static void dictionaryExportToFile(Dictionary dic) {
         try {
             File file = new File(FILE_TO_WRITE);
@@ -44,7 +70,7 @@ public class DictionaryManagement {
         Scanner scanner = new Scanner(System.in);
         String word = scanner.next();
         if (dic.search(word)) {
-            return "|" + word + "\t\t" + "|" + dic.getLink(word);
+            return "|" + word + "\t\t" + "|" + dic.getLink(word).getWord_explain();
         } else {
             return "Can't find";
         }
@@ -66,7 +92,7 @@ public class DictionaryManagement {
     }
 
     public static void change_Word_target(String word_target, String new_word_target, Dictionary dic) {
-        String old_word_explain = dic.getLink(word_target);
+        String old_word_explain = dic.getLink(word_target).getWord_explain();
         removeWord(word_target, dic);
         addWord(new_word_target, old_word_explain, dic);
     }

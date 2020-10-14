@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="850.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DetailController">
+   <children>
+      <Label layoutX="47.0" layoutY="399.0" text="Explain :" textFill="#ff7b00c5">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label fx:id="wordLabel" layoutX="47.0" layoutY="119.0" text="Word">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <Label fx:id="explainLabel" layoutX="199.0" layoutY="399.0" text="Explain">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <AnchorPane layoutX="-5.0" layoutY="-2.0" prefHeight="82.0" prefWidth="858.0" style="-fx-background-color: #393300;">
+         <children>
+            <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" prefHeight="72.0" prefWidth="235.0" style="-fx-background-color: #393345; -fx-background-radius: 0 0 0 0;" styleClass="button1" stylesheets="@CSS/fullpackstyling.css" text="🔙" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="pronounceLabel" layoutX="47.0" layoutY="203.0" text="pronounce" textFill="GREY">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeLabel" layoutX="160.0" layoutY="301.0" text="Type">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="301.0" text="Type :" textFill="#95a12aba">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
