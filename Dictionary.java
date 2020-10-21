@@ -1,18 +1,19 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
-import static java.lang.Character.toUpperCase;
 
-public class Dictionary {
-    public TrieNode root;
+public class Dictionary{
+    private TrieNode root;
     private String all_words;
-    public HashMap<String, Word> Link = new HashMap<>();
+    private HashMap<String, Word> Link = new HashMap<>();
 
     public Dictionary() {
         this.root = new TrieNode();
     }
 
+    public TrieNode getRoot() {
+        return this.root;
+    }
 
     public void setLink(Word word) {
         Link.put(word.getWord_target(), word);
@@ -28,14 +29,12 @@ public class Dictionary {
 
     public void insert(String word) {
         TrieNode current = root;
-        current.setCount(current.getCount() + 1);
 
         for (char l : word.toCharArray()) {
             if (current.getChildren(l) == null) {
                 current.setChildren(l);
             }
             current = current.getChildren(l);
-            current.setCount(current.getCount() + 1);
         }
         current.set_isWord(true);
     }
@@ -71,7 +70,8 @@ public class Dictionary {
             return;
         }
         if (node.isWord()) {
-            all_words = all_words + ("|" + (word) + "\t\t" + "|" + (getLink(word).getWord_explain()) + "\n");
+            all_words = all_words + ((word) + "\t\t|" + (getLink(word).getWord_explain()) + "\t\t|" +(getLink(word).getWord_pronunciation())
+                    + "\t\t|" + (getLink(word).getWord_type()) + "\n");
         }
         for (char i = ' '; i <= 'z'; i++) {
             if (node.getChildren(i) != null) {
@@ -129,7 +129,7 @@ public class Dictionary {
     }
 
     public String toString() {
-        all_words = "No | English" + "\t\t" + "| Vietnamese" + "\n";
+        all_words = "";
         save_word(root, "");
         return all_words;
     }

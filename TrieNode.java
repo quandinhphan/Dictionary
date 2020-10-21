@@ -3,11 +3,9 @@ import java.util.HashMap;
 public class TrieNode {
     private HashMap<Character, TrieNode> children;
     private boolean isWord;
-    int count;
 
     public TrieNode() {
         children = new HashMap<>();
-        count = 0;
     }
 
     public TrieNode getChildren(char c) {
@@ -26,11 +24,4 @@ public class TrieNode {
         return this.isWord;
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
 }

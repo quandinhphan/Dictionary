@@ -2,6 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class DictionaryCommandline {
+
     public static void showAllWords(Dictionary dic) {
         System.out.println(dic.toString());
     }
@@ -21,8 +22,7 @@ public class DictionaryCommandline {
         Scanner sc = new Scanner(System.in);
         Dictionary dictionary = new Dictionary();
         DictionaryManagement.insertFromFile(dictionary);
-        dictionary.remove(dictionary.root, "else", 0);
-        DictionaryManagement.addWord("fine", "on", dictionary);
+        dictionary.remove(dictionary.getRoot(), "else", 0);
         DictionaryCommandline.showAllWords(dictionary);
         DictionaryManagement.removeWord("finally", dictionary);
         DictionaryManagement.removeWord("final", dictionary);
